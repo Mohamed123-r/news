@@ -3,7 +3,7 @@ import '../widgets/category_list_card.dart';
 import '../widgets/news_list_view.dart';
 
 
-// hi
+
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
 
@@ -20,7 +20,7 @@ class HomePage extends StatelessWidget {
               'News',
               style: TextStyle(
                 color: Colors.black,
-
+                fontWeight: FontWeight.bold
               ),
             ),
             Text(
