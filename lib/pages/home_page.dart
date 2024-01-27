@@ -20,14 +20,14 @@ class HomePage extends StatelessWidget {
               'News',
               style: TextStyle(
                 color: Colors.black,
-
+                fontWeight: FontWeight.bold
               ),
             ),
             Text(
               'Cloud',
               style: TextStyle(
                 color: Colors.orange,
-
+                  fontWeight: FontWeight.bold
               ),
             ),
           ],
