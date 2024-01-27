@@ -11,7 +11,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        elevation: 0,
+
         backgroundColor: Colors.transparent,
         title: const Row(
           mainAxisAlignment: MainAxisAlignment.center,
