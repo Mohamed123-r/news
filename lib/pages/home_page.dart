@@ -20,7 +20,7 @@ class HomePage extends StatelessWidget {
               'News',
               style: TextStyle(
                 color: Colors.black,
-                fontWeight: FontWeight.bold
+
               ),
             ),
             Text(
