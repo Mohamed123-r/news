@@ -13,7 +13,7 @@ class NewsListCart extends StatelessWidget {
   Widget build(BuildContext context) {
     return SliverList.builder(
       itemCount: 55,
-      itemBuilder: (contex, index) {
+      itemBuilder: (context, index) {
         return Padding(
           padding: const EdgeInsets.only(bottom: 12.0),
           child: NewsCard(
