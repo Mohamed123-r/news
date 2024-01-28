@@ -6,7 +6,7 @@ class NewsService {
 
   NewsService({required this.dio});
 
-  void getNews() async {
+  Future<List<ArticlesModel>> getNews() async {
     Response response = await dio.get(
         'https://newsapi.org/v2/everything?q=general&apiKey=c5960a887f78413b994e0f5d787c46cb');
     Map<String, dynamic> jsonData = response.data;
@@ -21,6 +21,6 @@ class NewsService {
       );
       articlesList.add(articleModel);
     }
-    print(articlesList);
+    return articlesList ;
   }
 }
