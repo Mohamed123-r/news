@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:news_app/widgets/news_list_view_builder.dart';
 import '../widgets/category_list_card.dart';
 import '../widgets/news_list_view.dart';
 
@@ -46,10 +47,11 @@ class HomePage extends StatelessWidget {
                 height: 24,
               ),
             ),
-            const NewsListCart(),
+            NewsListViewBuilder(),
           ],
         ),
       ),
     );
   }
 }
+
