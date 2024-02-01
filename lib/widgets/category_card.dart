@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../models/category_model.dart';
+import '../pages/category_page.dart';
 
 
 class CategoryCard extends StatelessWidget {
@@ -11,6 +12,14 @@ class CategoryCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) {
+              return const CategoryPage();
+            },
+          ),
+        );
       },
       child: Container(
         margin: const EdgeInsets.only(right: 8),
