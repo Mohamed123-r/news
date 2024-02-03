@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import '../models/category_model.dart';
 import '../pages/category_page.dart';
 
-
 class CategoryCard extends StatelessWidget {
   const CategoryCard({super.key, required this.category});
 
@@ -16,7 +15,9 @@ class CategoryCard extends StatelessWidget {
           context,
           MaterialPageRoute(
             builder: (context) {
-              return const CategoryPage();
+              return CategoryPage(
+                category: category.categoryName,
+              );
             },
           ),
         );
@@ -40,7 +41,7 @@ class CategoryCard extends StatelessWidget {
             style: const TextStyle(
               color: Colors.white,
               fontSize: 18,
-              fontWeight: FontWeight.bold
+              fontWeight: FontWeight.bold,
             ),
           ),
         ),

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:news_app/models/articles_model.dart';
+import 'package:news_app/pages/artical_page.dart';
 
 class NewsCard extends StatelessWidget {
   NewsCard({super.key, required this.article});
@@ -9,7 +10,16 @@ class NewsCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () {},
+      onTap: () {
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) {
+              return ArticalPage(uri: article.url);
+            },
+          ),
+        );
+      },
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [

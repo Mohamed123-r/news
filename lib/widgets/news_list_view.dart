@@ -1,9 +1,6 @@
-import 'package:dio/dio.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:news_app/models/articles_model.dart';
-import 'package:news_app/services/news_service.dart';
-
 import 'news_tile.dart';
 
 class NewsListCart extends StatelessWidget {

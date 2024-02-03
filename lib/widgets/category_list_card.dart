@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import '../models/category_model.dart';
 import 'Category_Card.dart';
 
@@ -38,8 +37,8 @@ class CategoriesListView extends StatelessWidget {
         itemCount: card.length,
         scrollDirection: Axis.horizontal,
         itemBuilder: (context, index) {
-          return CategoryCard(category: card[index],
-
+          return CategoryCard(
+            category: card[index],
           );
         },
       ),
